@@ -9,7 +9,7 @@ public class Player extends AppCompatActivity {
 
     //id, first step in category, most step does not require a sequence of finished steps
     private Step mCurrentStep;
-    private User mUser,
+    private User mUser;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
