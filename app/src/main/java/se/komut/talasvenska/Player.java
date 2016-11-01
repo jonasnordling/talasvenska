@@ -5,9 +5,19 @@ import android.os.Bundle;
 
 public class Player extends AppCompatActivity {
 
+    private Category currentCategory; //Current category, ex Family
+
+    //id, first step in category, most step does not require a sequence of finished steps
+    private Step currentStep;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_player);
     }
+
+
+
+
+
 }
