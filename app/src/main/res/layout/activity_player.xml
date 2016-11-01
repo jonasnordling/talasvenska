@@ -28,6 +28,7 @@
 
     <Button
         android:text="Listen to Swedish"
+        android:onClick="listenToSwedish"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/listenSwedishButton"
@@ -42,6 +43,7 @@
 
     <Button
         android:text="Listen to you"
+        android:onClick="listenToYou"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/listenYouButton"
