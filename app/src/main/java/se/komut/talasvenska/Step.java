@@ -2,78 +2,88 @@ package se.komut.talasvenska;
 
 /**
  * Created by Jonas on 2016-11-01.
+ *
+ * A Step is normally one phrase to practice on. Sequential steps enforce a certain order of steps for special use
  */
 
-public class Step {
-    private int mId;
+class Step {
+    private int mId = -1;
 
-    private int mOrder; //Order in category
-    private boolean mSequential;
+    private int mOrder = 0; //Order in category
+    private boolean mSequential = false;
 
-    private String mSwedishText;
-    private String mXlangText;
+    private String mSwedishText = null;
+    private String mXlangText = null;
 
-    private String mSwedishSoundfile;
-    private String mXlangSoundfile;
-    private String mUserSoundfile;
+    private String mSwedishSoundfile = null;
+    private String mXlangSoundfile = null;
+    private String mUserSoundfile = null;
 
-    public int getmId(){
-        return mId;
-    }
-
-    public int getmOrder() {
-        return mOrder;
-    }
-
-    public void setmOrder(int mOrder) {
-        this.mOrder = mOrder;
-    }
-
-    public boolean ismSequential() {
-        return mSequential;
-    }
-
-    public void setmSequential(boolean mSequential) {
-        this.mSequential = mSequential;
-    }
-
-    public String getmSwedishText() {
-        return mSwedishText;
-    }
-
-    public void setmSwedishText(String mSwedishText) {
+    public Step(int mId, String mSwedishText, String mXlangText, String mSwedishSoundfile, String mXlangSoundfile) {
+        this.mId = mId;
         this.mSwedishText = mSwedishText;
-    }
-
-    public String getmXlangText() {
-        return mXlangText;
-    }
-
-    public void setmXlangText(String mXlangText) {
         this.mXlangText = mXlangText;
-    }
-
-    public String getmSwedishSoundfile() {
-        return mSwedishSoundfile;
-    }
-
-    public void setmSwedishSoundfile(String mSwedishSoundfile) {
         this.mSwedishSoundfile = mSwedishSoundfile;
-    }
-
-    public String getmXlangSoundfile() {
-        return mXlangSoundfile;
-    }
-
-    public void setmXlangSoundfile(String mXlangSoundfile) {
         this.mXlangSoundfile = mXlangSoundfile;
     }
 
-    public String getmUserSoundfile() {
+    public int getId(){
+        return mId;
+    }
+
+    public int getOrder() {
+        return mOrder;
+    }
+
+    public void setOrder(int mOrder) {
+        this.mOrder = mOrder;
+    }
+
+    public boolean isSequential() {
+        return mSequential;
+    }
+
+    public void setSequential(boolean mSequential) {
+        this.mSequential = mSequential;
+    }
+
+    public String getSwedishText() {
+        return mSwedishText;
+    }
+
+    public void setSwedishText(String mSwedishText) {
+        this.mSwedishText = mSwedishText;
+    }
+
+    public String getXlangText() {
+        return mXlangText;
+    }
+
+    public void setXlangText(String mXlangText) {
+        this.mXlangText = mXlangText;
+    }
+
+    String getSwedishSoundfile() {
+        return mSwedishSoundfile;
+    }
+
+    public void setSwedishSoundfile(String mSwedishSoundfile) {
+        this.mSwedishSoundfile = mSwedishSoundfile;
+    }
+
+    String getXlangSoundfile() {
+        return mXlangSoundfile;
+    }
+
+    public void setXlangSoundfile(String mXlangSoundfile) {
+        this.mXlangSoundfile = mXlangSoundfile;
+    }
+
+    String getUserSoundfile() {
         return mUserSoundfile;
     }
 
-    public void setmUserSoundfile(String mUserSoundfile) {
+    public void setUserSoundfile(String mUserSoundfile) {
         this.mUserSoundfile = mUserSoundfile;
     }
 }

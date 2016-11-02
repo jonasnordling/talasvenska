@@ -2,24 +2,27 @@ package se.komut.talasvenska;
 
 /**
  * Created by Jonas on 2016-11-01.
+ *
+ * Encapsulates a user
  */
 
-public class User {
-    private int mId;
-    private String mUsername;
-    private String mFirstName;
-    private String mLastName;
-    private int mXlangId;
-    private int mCountryOrRegion;
+class User {
+    private int mId = -1;
+    private String mUsername = null;
+    private String mFirstName = null;
+    private String mLastName = null;
+    private int mXlangId = -1;
+    private int mCountryOrRegion = -1;
 
-    public int getmId() {
-        return mId;
+    public User(String mUsername, int mId, int mXlangId) {
+        this.mUsername = mUsername;
+        this.mId = mId;
+        this.mXlangId = mXlangId;
     }
 
-    public String getmUsername() {
+    public int getmId() { return mId; }
 
-        return mUsername;
-    }
+    public String getmUsername() {return mUsername; }
 
     public void setmUsername(String mUsername) {
         this.mUsername = mUsername;
